@@ -1,0 +1,26 @@
+.synopsis {
+  align-self: start;
+  grid-column: span 2;
+  padding: 0 1.9rem;
+  text-align: center;
+  color: var(--light-100);
+}
+
+.synopsis span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (orientation: landscape) {
+  .synopsis {
+    grid-column: span 2;
+    order: 1;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .synopsis {
+      grid-column: span 1;
+      align-self: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.rangeslider {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--dark-75);
+  overflow: initial;
+}
+
+.rangeslider .rangeslider__fill {
+  background-color: var(--primary);
+}
+
+.rangeslider .rangeslider__handle {
+  border-radius: 0.5rem;
+  background-color: var(--light-100);
+}

@@ -1,0 +1,29 @@
+.section {
+  padding: 1rem 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--dark-75);
+}
+
+.table {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  border-radius: 2rem;
+  color: var(--light-100);
+  background: var(--dark-75);
+}
+
+.table th {
+  width: 33.3333333333%;
+  border-bottom: 1px solid var(--light-25);
+}
+
+.table td {
+  width: 33.3333333333%;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+}

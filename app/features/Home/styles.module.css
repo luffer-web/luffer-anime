@@ -1,0 +1,35 @@
+.section {
+  display: grid;
+  gap: 1rem 0;
+  grid-template-columns: 25% 75%;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--dark-75);
+  transition: opacity 0.25s linear;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.button {
+  place-self: center;
+  justify-self: start;
+  margin-left: 1rem;
+  border-radius: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    order: 2;
+    margin-left: 1.9rem;
+  }
+}

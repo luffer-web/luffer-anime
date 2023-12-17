@@ -1,0 +1,20 @@
+.background-video-wrapper {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+.background-video {
+  border: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.visible {
+  opacity: 100%;
+}

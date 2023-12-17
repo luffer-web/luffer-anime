@@ -1,0 +1,25 @@
+.heroImg {
+  position: absolute;
+  z-index: 9999;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--light-100);
+  background-image: linear-gradient(var(--dark-75), var(--dark-75)),
+    url("/bg.jpg");
+  background-position: top center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  transition: transform 1s linear;
+}
+
+.title {
+  place-self: center;
+  font-size: 2rem;
+  color: var(--primary);
+}

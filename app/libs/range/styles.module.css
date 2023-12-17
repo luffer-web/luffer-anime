@@ -1,0 +1,21 @@
+.volume {
+  display: none;
+  order: 2;
+  justify-self: end;
+  align-self: center;
+}
+
+.button {
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .volume {
+    display: block;
+    margin-right: 1.9rem;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+}

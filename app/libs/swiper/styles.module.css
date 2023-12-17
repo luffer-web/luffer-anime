@@ -1,0 +1,80 @@
+.swiper-miniatures {
+  place-self: center;
+  grid-column: span 2;
+  padding: 0 1rem;
+  height: 100px;
+  width: 100%;
+}
+
+.swiper-miniatures div {
+  overflow: initial;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  border: 2px solid green;
+  border-radius: 1rem;
+  object-fit: contain;
+  object-position: center;
+  background-color: red;
+}
+
+.swiper-gallery-miniatures {
+  width: 90%;
+  margin: 1rem auto 0 auto;
+}
+
+.paginator {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto 0 auto;
+}
+
+.swiper-paginator {
+  width: 100%;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.swiper-gallery-miniatures,
+.swiper-miniatures,
+.swiper-paginator {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 480px) {
+  .swiper-miniatures {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-miniatures {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-miniatures {
+    height: 100px;
+    order: 3;
+  }
+
+  @media screen and (min-height: 800px) {
+    .swiper-miniatures {
+      height: 200px;
+    }
+  }
+}

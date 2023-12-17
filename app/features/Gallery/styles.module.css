@@ -1,0 +1,25 @@
+.section {
+  position: relative;
+  padding-top: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--dark-75);
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter {
+  position: absolute;
+  top: 1.9rem;
+  right: 1.9rem;
+  color: green;
+  z-index: 9999;
+}
+
+.filter-active {
+  color: red;
+}
