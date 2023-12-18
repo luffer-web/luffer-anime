@@ -24,7 +24,7 @@ import { useFilter } from "./hooks/useFilter";
 import { calculateAspectRatioFit, shimmer, toBase64 } from "@/app/utils/images";
 import styles from "./styles.module.css";
 
-const LIM = 100;
+const LIM = 30;
 
 const Gallery = () => {
   const { pos } = useSnapshot(store);
@@ -230,7 +230,7 @@ const Gallery = () => {
       >
         {yandere?.posts
           ?.filter((post: YanderePost) => {
-            return !filter ? true : post.rating !== "q" && post.rating !== "e";
+            return filter ? true : post.rating !== "q" && post.rating !== "e";
           })
           .map((post: YanderePost, i: number) => (
             <SwiperSlide key={i} className={`${styles.slide}`}>
@@ -287,7 +287,7 @@ const Gallery = () => {
       >
         {yandere?.posts
           ?.filter((post: YanderePost) => {
-            return !filter ? true : post.rating !== "q" && post.rating !== "e";
+            return filter ? true : post.rating !== "q" && post.rating !== "e";
           })
           .map((post: YanderePost, i: number) => (
             <SwiperSlide key={i}>
@@ -309,7 +309,7 @@ const Gallery = () => {
       </SwiperGalleryMiniatures>
       <SwiperPaginator lim={LIM} count={count} page={page} setPage={setPage} />
       <Button
-        className={`${styles.filter} ${!filter ? styles["filter-active"] : ""}`}
+        className={`${styles.filter} ${filter ? styles["filter-active"] : ""}`}
         onClick={() => setFilter(!filter)}
       >
         <Icons icon="danger" />
